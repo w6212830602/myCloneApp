@@ -1,40 +1,29 @@
 import React from 'react';
-import { View, Text, StyleSheet, Image } from 'react-native';
+import { View, Image, StyleSheet, Dimensions } from 'react-native';
+
+const screenWidth = Dimensions.get('window').width;
+const screenHeight = Dimensions.get('window').height;
 
 export default function MainSection() {
   return (
     <View style={styles.container}>
       <Image
-        source={require('../assets/sample-image.png')} // Ensure you have an image in the assets folder
+        source={require('../assets/main-section.jpg')} // Ensure this path is correct
         style={styles.image}
         resizeMode="cover"
       />
-      <Text style={styles.title}>Product Title</Text>
-      <Text style={styles.description}>This is a short product description.</Text>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    width: '100%',
     alignItems: 'center',
-    justifyContent: 'center',
-    padding: 16,
+    justifyContent: 'flex-start',
   },
   image: {
-    width: '100%',
-    height: 200,
-    borderRadius: 10,
-  },
-  title: {
-    fontSize: 22,
-    fontWeight: 'bold',
-    marginTop: 10,
-  },
-  description: {
-    fontSize: 16,
-    color: '#555',
-    marginTop: 6,
+    width: screenWidth,
+    height: screenHeight * 0.77, 
   },
 });

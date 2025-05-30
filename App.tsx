@@ -1,8 +1,8 @@
 import React from 'react';
 import { SafeAreaView, StyleSheet } from 'react-native';
-import TopNav from '../components/TopNav';
-import MainSection from '../components/MainSection';
-import BottomNav from '../components/BottomNav';
+import TopNav from './components/TopNav';
+import MainSection from './components/MainSection';
+import BottomNav from './components/BottomNav';
 
 export default function App() {
   return (
