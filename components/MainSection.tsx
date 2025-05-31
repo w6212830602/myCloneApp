@@ -24,6 +24,6 @@ const styles = StyleSheet.create({
   },
   image: {
     width: screenWidth,
-    height: screenHeight * 0.77, 
+    height: screenHeight, 
   },
 });
