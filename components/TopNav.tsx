@@ -9,18 +9,15 @@ export default function TopNav() {
 
   return (
     <View style={styles.container}>
-      {/* Back Button */}
       <TouchableOpacity onPress={handlePress}>
         <Ionicons name="chevron-back" size={24} color="black" />
       </TouchableOpacity>
 
-      {/* Center Text */}
       <View style={styles.centerText}>
         <Text style={styles.title}>Group Profile</Text>
         <Text style={styles.subtitle}>ootd_everyday</Text>
       </View>
 
-      {/* Add Button */}
       <TouchableOpacity onPress={handlePress}>
       <Octicons name="diff-added" size={24} color="#3D403D" />
       </TouchableOpacity>
