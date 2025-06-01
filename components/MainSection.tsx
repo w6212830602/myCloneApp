@@ -27,19 +27,22 @@ export default function MainSection() {
   return (
     <View style={styles.container}>
       {/* Profile header */}
-      <View style={styles.profileHeader}>
+      <View style={styles.headerRow}>
         <Image source={require('../assets/profile.jpg')} style={styles.avatar} />
-        <View>
-          <Text style={styles.groupTitle}>Group Profile</Text>
-          <Text style={styles.username}>@ootd_everyday</Text>
+        <View style={styles.statsContainer}>
+          <View style={styles.statItem}>
+            <Text style={styles.statNumber}>53</Text>
+            <Text>Posts</Text>
+          </View>
+          <View style={styles.statItem}>
+            <Text style={styles.statNumber}>12</Text>
+            <Text>Members</Text>
+          </View>
+          <View style={styles.statItem}>
+            <Text style={styles.statNumber}>1</Text>
+            <Text>Admins</Text>
+          </View>
         </View>
-      </View>
-
-      {/* Stats row */}
-      <View style={styles.statsRow}>
-        <Text style={styles.statText}>53{'\n'}Posts</Text>
-        <Text style={styles.statText}>12{'\n'}Members</Text>
-        <Text style={styles.statText}>1{'\n'}Admins</Text>
       </View>
 
       {/* Description */}
@@ -131,4 +134,26 @@ memberButtonText: {
     borderWidth: 0.5,
     borderColor: '#ccc',
   },
+  headerRow: {
+  flexDirection: 'row',
+  alignItems: 'center',
+  marginBottom: 16,
+},
+
+statsContainer: {
+  flexDirection: 'row',
+  justifyContent: 'space-around',
+  flex: 1, 
+},
+
+statItem: {
+  alignItems: 'center',
+  marginHorizontal: 6,
+},
+
+statNumber: {
+  fontWeight: 'bold',
+  fontSize: 16,
+},
+
 });
