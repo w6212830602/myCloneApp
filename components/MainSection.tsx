@@ -21,6 +21,9 @@ const images = [
   { src: require('../assets/img7.jpg') },
   { src: require('../assets/img8.jpg') },
   { src: require('../assets/img9.jpg') },
+  { src: require('../assets/img10.jpg') },
+  { src: require('../assets/img11.jpg') },
+  { src: require('../assets/img12.jpg') },
 ];
 
 export default function MainSection() {
