@@ -51,6 +51,7 @@ export default function MainSection() {
       {/* Description */}
       <Text style={styles.nameText}>OOTD Everyday</Text>
       <Text style={styles.bioText}>Fit check! 👕</Text>
+      <Text style={styles.bioText}>You know we'll hype you up.</Text>
 
       {/* Member dropdown */}
       <TouchableOpacity style={styles.memberButton}>
@@ -108,11 +109,12 @@ const styles = StyleSheet.create({
   nameText: {
     fontSize: 16,
     fontWeight: '600',
+    marginBottom: 2,
   },
   bioText: {
     fontSize: 14,
     color: '#444',
-    marginBottom: 10,
+
   },
 memberButton: {
   alignSelf: 'center',           
